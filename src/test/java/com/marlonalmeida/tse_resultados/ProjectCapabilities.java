@@ -1,4 +1,4 @@
-package com.marlonalmeida.appium_calc;
+package com.marlonalmeida.tse_resultados;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -26,12 +26,11 @@ public class ProjectCapabilities {
         return caps;
     }
 
-    public static DesiredCapabilities AndroidCalc() {
+    public static DesiredCapabilities AndroidApp() {
         DesiredCapabilities caps = AndroidBase();
-        //caps.setCapability("app",  localApp("TheApp.apk"));
-        caps.setCapability("appPackage", "com.android.calculator2");
-        caps.setCapability("appActivity", "com.android.calculator2.Calculator");
-        //caps.setCapability("appWaitActivity", "com.reactnativenavigation.controllers.NavigationActivity");
+        caps.setCapability("app",  localApp("tse-resultados.apk"));
+        caps.setCapability("appPackage", "br.jus.tse.resultados");
+        caps.setCapability("appActivity", "br.jus.tse.resultados.MainActivity");
         return caps;
     }
 

@@ -1,4 +1,4 @@
-package com.marlonalmeida.appium_calc;
+package com.marlonalmeida.tse_resultados;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
