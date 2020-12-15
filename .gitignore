@@ -9,5 +9,5 @@ apps/*.ipa
 validations
 trace.zip
 *.trace
-apps
+#apps
 .idea

@@ -42,7 +42,7 @@ public class TourResultados extends TestBase {
 
         // Scroll e clica no botão [Li e Aceito]
         driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Li e Aceito\"))"));
-        driver.findElement(MobileBy.partialLinkText("Li e Aceito")).click();
+        driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().textContains(\"Li e Aceito\")")).click();
 
         //driver.findElement(MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[3]/android.widget.Button")).click();
         //BTN_ENTENDI = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().textContains(\"Entendi\")')
